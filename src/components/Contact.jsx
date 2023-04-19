@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles, { layout } from "../style";
 
-//npm install @emailjs/browser
-
 const Contact = () => {
   const form = useRef();
 
@@ -12,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_ishani_patel",
+        "template_ishani_patel",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "klslTT73yj2673ewc"
       )
       .then(
         (result) => {
@@ -25,6 +23,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
@@ -32,10 +31,8 @@ const Contact = () => {
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>Get in Touch With Me</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          I value focussing on the basics; this starts off by looking at the
-          pillars of health and establishing a core foundation. Forming
-          realistic and healthy habits enhances our ability to sustain our
-          wellbeing long-term.
+          Have a question? Please fill out the form, and Dr. Patel, ND will get
+          back to you within 1-2 business days.
         </p>
       </div>
 
@@ -46,23 +43,29 @@ const Contact = () => {
               <div className="grid grid-cols-2 gap-2">
                 <input
                   type="text"
-                  className="font-regular font-normal text-[18px] p-1 rounded"
+                  className={`${styles.textInput}`}
                   placeholder="First Name"
                   name="firstName"
                 />
                 <input
                   type="text"
-                  className="font-regular font-normal text-[18px] p-1 rounded"
+                  className={`${styles.textInput}`}
                   placeholder="Last Name"
                   name="lastName"
                 />
               </div>
-              <div className="pt-2 mx-auto">
+              <div className="grid grid-cols-2 gap-2 pt-2">
                 <input
                   type="email"
                   className={`${styles.textInput}`}
                   placeholder="Email Address"
                   name="email"
+                />
+                <input
+                  type="phone"
+                  className={`${styles.textInput}`}
+                  placeholder="Phone Number"
+                  name="phone"
                 />
               </div>
               <div className="pt-2 mx-auto">
