@@ -1,10 +1,11 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  button: "py-4 px-6 font-regular font-medium text-[18px] rounded-[5px]",
+
   heading2:
     "font-regular font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph:
-    "font-regular font-normal text-dimWhite text-[18px] leading-[30.8px]",
+  paragraph: "font-regular font-normal text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -16,6 +17,8 @@ const styles = {
 
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
+
+  textInput: "font-regular font-normal text-[18px] p-1 w-full rounded",
 };
 
 export const layout = {

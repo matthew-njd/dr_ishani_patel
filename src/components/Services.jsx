@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 
 const ServiceCard = ({ icon, title, content, index }) => (
   <div
-    className={`bg-secondary flex flex-row p-6 rounded-[20px] ${
+    className={`bg-secondary flex flex-row p-6 rounded-[10px] ${
       index !== services.length - 1 ? "mb-6" : "mb-0"
     } service-card`}
   >
