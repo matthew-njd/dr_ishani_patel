@@ -90,31 +90,22 @@ export const services = [
   },
 ];
 
-export const footerLinks = [
+export const footerClinic = [
   {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
+    title: "Inspired Wellness",
+    address: "822 Richmond St West, Suite 102",
+    location: "Toronto, Ontario, M6J 1C9",
+    number: "416-214-925",
+    hours1: "Wednesday 3:00 pm - 7:00 pm",
+    hours2: "Saturday 9:00 am - 2:00 pm",
+  },
+  {
+    title: "Thrive Natural Family Health",
+    address: "110 Eglinton Avenue East, Suite 502",
+    location: "Toronto, Ontario, M4P 2Y1",
+    number: "647-352-7911",
+    hours1: "Wednesday 9:00 am - 1:00 pm",
+    hours2: "Friday 2:00 pm - 6:00 pm",
   },
 ];
 
