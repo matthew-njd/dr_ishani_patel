@@ -16,6 +16,9 @@ import homeo from "../assets/homeo.svg";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
 
+import inspired from "../assets/inspired.png";
+import thrive from "../assets/thrive.png";
+
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
@@ -36,6 +39,8 @@ export {
   homeo,
   test,
   supp,
+  inspired,
+  thrive,
   facebook,
   instagram,
   linkedin,

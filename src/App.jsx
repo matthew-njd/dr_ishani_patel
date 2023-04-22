@@ -22,6 +22,11 @@ const App = () => {
           <Services />
           <About />
           <Contact />
+        </div>
+      </div>
+
+      <div className={`bg-tertiary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
       </div>
