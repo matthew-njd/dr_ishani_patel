@@ -22,6 +22,7 @@ import thrive from "../assets/thrive.png";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
+import linktree from "../assets/linktree.svg";
 
 export {
   homePic,
@@ -44,4 +45,5 @@ export {
   facebook,
   instagram,
   linkedin,
+  linktree,
 };
