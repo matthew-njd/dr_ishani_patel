@@ -1,3 +1,4 @@
+import { facebook, instagram, linkedin } from "../assets";
 import { clinics } from "../constants";
 import styles, { layout } from "../style";
 
@@ -30,11 +31,43 @@ const ClinicDetails = ({
 
 const Footer = () => {
   return (
-    <section className={`${layout.section}`}>
+    <section className={`grid grid-row-2 ${styles.paddingY}`}>
       <div className="text-white grid grid-cols-2 w-full">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />
         ))}
+      </div>
+      <div className={`${layout.sectionImg}`}>
+        <a
+          href="https://www.facebook.com/ishani.patel.7161"
+          className="w-[32px] h-[32px]"
+        >
+          <img
+            src={facebook}
+            alt="facebook"
+            className="w-[100%] h-[100%] object-contain"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/ishani.patel.7161"
+          className="w-[32px] h-[32px]"
+        >
+          <img
+            src={instagram}
+            alt="instagram"
+            className="w-[100%] h-[100%] object-contain"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/ishani.patel.7161"
+          className="w-[32px] h-[32px]"
+        >
+          <img
+            src={linkedin}
+            alt="linkedin"
+            className="w-[100%] h-[100%] object-contain"
+          />
+        </a>
       </div>
     </section>
   );
