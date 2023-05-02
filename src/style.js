@@ -1,10 +1,10 @@
 const styles = {
-  boxWidth: "xl:max-w-[1280px] w-full",
+  boxWidth: "xl:max-w-[1080px] w-full",
 
   button: "py-4 px-6 font-regular font-medium text-[18px] rounded-[5px]",
 
   heading2:
-    "font-regular font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-regular font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px]",
   paragraph: "font-regular font-normal text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
@@ -23,7 +23,7 @@ const styles = {
 
 export const layout = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
+  sectionReverse: `flex md:flex-row flex-col-reverse`,
 
   sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,

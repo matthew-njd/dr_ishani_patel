@@ -1,11 +1,9 @@
 import { services } from "../constants";
-import styles, { layout } from "../style";
+import styles from "../style";
 
 const ServiceCard = ({ icon, title, content, index }) => (
   <div
-    className={`bg-secondary flex flex-row p-6 rounded-[10px] ${
-      index !== services.length - 1 ? "mb-6" : "mb-0"
-    } service-card`}
+    className={`bg-secondary flex flex-row p-6 w-full rounded-[10px] box-shadow`}
   >
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter}`}>
       <img
@@ -27,21 +25,23 @@ const ServiceCard = ({ icon, title, content, index }) => (
 
 const Services = () => {
   return (
-    <section id="services" className={layout.section}>
-      <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Services I Provide</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+    <section id="services" className={`${styles.paddingY}`}>
+      <div className="grid">
+        <h2 className={`${styles.heading2} ${styles.flexCenter} mb-5`}>
+          Services I Provide
+        </h2>
+        <p className={`${styles.paragraph} px-[100px] mb-[5%]`}>
           I value focussing on the basics; this starts off by looking at the
           pillars of health and establishing a core foundation. Forming
           realistic and healthy habits enhances our ability to sustain our
           wellbeing long-term.
         </p>
-      </div>
 
-      <div className={`${layout.sectionImg} flex-col`}>
-        {services.map((service, index) => (
-          <ServiceCard key={service.id} {...service} index={index} />
-        ))}
+        <div className="grid grid-cols-2 gap-4">
+          {services.map((service, index) => (
+            <ServiceCard key={service.id} {...service} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   );

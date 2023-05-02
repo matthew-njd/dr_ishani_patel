@@ -58,14 +58,14 @@ export const services = [
   {
     id: "services-4",
     icon: phys,
-    title: "Physical Medicine and Hydrotherapy",
+    title: "Body Work",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra leo eget.",
   },
   {
     id: "services-5",
     icon: hydro,
-    title: "Physical Medicine and Hydrotherapy",
+    title: "Hydrotherapy",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie viverra dolor.",
   },

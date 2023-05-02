@@ -12,7 +12,7 @@ const App = () => {
       </div>
 
       <div className={`bg-wood ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.boxWidth} w-[80%]`}>
           <Hero />
         </div>
       </div>

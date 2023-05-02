@@ -31,7 +31,7 @@ const ClinicDetails = ({
 
 const Footer = () => {
   return (
-    <section className="grid grid-row-2 gap-8 py-4">
+    <section className="grid grid-row-2 gap-8 py-8">
       <div className="text-white grid grid-cols-2 w-full">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />

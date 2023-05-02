@@ -3,11 +3,11 @@ import styles from "../style";
 import Button from "./Button";
 
 const Hero = () => (
-  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+  <section id="home" className={`flex ${styles.paddingY}`}>
     <div
-      className={`relative flex-1 ${styles.flexStart} flex-col items-center ss:flex-row xl:px-0 sm:px-16`}
+      className={`relative flex-1 ${styles.flexStart} items-center ss:flex-row xl:px-0 sm:px-16`}
     >
-      <div className="bg-primary flex-1 font-regular p-10 md:mr ss:text-[22px] text-[18px]">
+      <div className="relative z-[1] mr-[-50px] bg-primary font-regular p-10 md:mr ss:text-[22px] text-[18px] box-shadow-full rounded-lg">
         Hormones | Digestion | Fertility | Autoimmune <br />
         <span className="ss:text-[32px] text-[22px]">
           Dr. Ishani Patel, Naturopathic Doctor <br />
@@ -19,17 +19,21 @@ const Hero = () => (
           to find their balance in living the life they always aspired for
         </p>
         <div className="ss:flex hidden md:mr-4 mr-0">
-          <Button styles={`mt-10`} />
+          <Button styles={`mt-10 btn-card`} />
         </div>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10`}>
-        <img src={homePic} alt="portrait" className="w-[100%]" />
+      <div className={`relative flex-1 md:my-0 my-10`}>
+        <img
+          src={homePic}
+          alt="portrait"
+          className="w-[100%] box-shadow-full rounded-lg"
+        />
       </div>
     </div>
 
     <div className={`ss:hidden ${styles.flexCenter}`}>
-      <Button styles={`mt-10`} />
+      <Button styles={`mt-10 btn-card`} />
     </div>
   </section>
 );

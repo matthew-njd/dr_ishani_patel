@@ -17,15 +17,11 @@
     rgba(186, 179, 181, 1) 50%,
     rgba(3, 3, 67, 1) 100%
   );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --card-shadow: 5px 5px 10px -5px #000000; /* #030343 */
 }
 
 * {
   scroll-behavior: smooth;
-}
-
-.box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
 .sidebar {
@@ -37,8 +33,19 @@
   resize: none;
 }
 
+.box-shadow-full {
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.box-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+.btn-card {
+  box-shadow: var(--card-shadow);
+}
+
 .service-card:hover {
-  background: var(--main-gradient);
   box-shadow: var(--card-shadow);
 }
 
