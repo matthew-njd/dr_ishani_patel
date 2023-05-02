@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
 
         <div className={`${layout.sectionInfo}`}>
-          <div className="bg-secondary w-full mt-5 box-shadow rounded-lg">
+          <div className="bg-secondary w-full mt-5 box-shadow-full rounded-lg">
             <form ref={form} onSubmit={sendEmail}>
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-2">
