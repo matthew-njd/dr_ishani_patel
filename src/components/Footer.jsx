@@ -1,6 +1,5 @@
 import { facebook, instagram, linkedin, linktree } from "../assets";
 import { clinics } from "../constants";
-import styles, { layout } from "../style";
 
 const ClinicDetails = ({
   title,
@@ -13,26 +12,36 @@ const ClinicDetails = ({
   maps,
   img,
 }) => (
-  <div className="flex flex-col justify-center items-center">
-    <h4 className="font-regular font-normal text-[22px]">{title}</h4>
-    <p className="font-regular font-normal text-[16px]">{address}</p>
-    <p className="font-regular font-normal text-[16px]">{location}</p>
-    <a href={`tel:${phone}`}>
-      <p className="font-regular font-normal text-[16px]">{phone}</p>
-    </a>
-    <p className="font-regular font-normal text-[16px]">{hours1}</p>
-    <p className="font-regular font-normal text-[16px]">{hours2}</p>
-    <p className="font-regular font-normal text-[16px]">{hours3}</p>
-    <a href={maps} className="w-[250px] h-[250px]" target="_blank">
-      <img src={img} alt="maps" className="w-[100%] h-[100%] object-contain" />
-    </a>
+  <div className="bg-primary mx-[6rem] pt-2 rounded-[10px]">
+    <div className="flex flex-col justify-center items-center">
+      <h4 className="font-regular font-normal text-[22px]">{title}</h4>
+      <p className="font-regular font-normal text-[16px]">{address}</p>
+      <p className="font-regular font-normal text-[16px]">{location}</p>
+      <a href={`tel:${phone}`}>
+        <p className="font-regular font-normal text-[16px]">{phone}</p>
+      </a>
+      <p className="font-regular font-normal text-[16px]">{hours1}</p>
+      <p className="font-regular font-normal text-[16px]">{hours2}</p>
+      <p className="font-regular font-normal text-[16px]">{hours3}</p>
+      <a
+        href={maps}
+        className="w-[250px] h-[250px] rounded-[10px]"
+        target="_blank"
+      >
+        <img
+          src={img}
+          alt="maps"
+          className="mt-2 w-[100%] h-[100%] rounded-[10px]"
+        />
+      </a>
+    </div>
   </div>
 );
 
 const Footer = () => {
   return (
     <section className="grid grid-row-2 gap-8 py-8">
-      <div className="text-white grid grid-cols-2 w-full">
+      <div className="grid grid-cols-2 w-full">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />
         ))}

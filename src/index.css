@@ -17,7 +17,8 @@
     rgba(186, 179, 181, 1) 50%,
     rgba(3, 3, 67, 1) 100%
   );
-  --card-shadow: 5px 5px 10px -5px #000000; /* #030343 */
+  --card-shadow-dark: 5px 5px 10px -5px #000000; /* #030343 */
+  --card-shadow-light: 5px 5px 10px -5px #ffffff;
 }
 
 * {
@@ -38,15 +39,20 @@
 }
 
 .box-shadow {
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--card-shadow-dark);
+}
+
+.box-shadow-light {
+  box-shadow: var(--card-shadow-light);
 }
 
 .btn-card {
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--card-shadow-dark);
 }
 
 .service-card:hover {
-  box-shadow: var(--card-shadow);
+  animation: scale 0.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .nav-text:hover {
@@ -65,6 +71,15 @@
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
+}
+
+@keyframes scale {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(102%);
+  }
 }
 
 @-webkit-keyframes slide-top {

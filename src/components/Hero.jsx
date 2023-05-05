@@ -2,6 +2,10 @@ import { homePic } from "../assets";
 import styles from "../style";
 import Button from "./Button";
 
+function goToServices() {
+  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+}
+
 const Hero = () => (
   <section id="home" className={`flex ${styles.paddingY}`}>
     <div
@@ -19,7 +23,10 @@ const Hero = () => (
           to find their balance in living the life they always aspired for
         </p>
         <div className="ss:flex hidden md:mr-4 mr-0">
-          <Button styles={`mt-10 btn-card`} />
+          <Button
+            styles={`mt-10 btn-card animate-bounce`}
+            onClick={goToServices}
+          />
         </div>
       </div>
 

@@ -1,9 +1,9 @@
 import { services } from "../constants";
 import styles from "../style";
 
-const ServiceCard = ({ icon, title, content, index }) => (
+const ServiceCard = ({ icon, title, content }) => (
   <div
-    className={`bg-secondary flex flex-row p-6 w-full rounded-[10px] box-shadow`}
+    className={`bg-secondary flex flex-row p-6 w-full rounded-[10px] box-shadow service-card`}
   >
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter}`}>
       <img
