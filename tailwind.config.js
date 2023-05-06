@@ -11,7 +11,7 @@ module.exports = {
         whiteColour: "#ffffff",
       },
       fontFamily: {
-        regular: ["Playfair Display", "serif"],
+        regular: ["Lora", "serif"],
         cursive: ["Great Vibes", "cursive"],
       },
       backgroundImage: {

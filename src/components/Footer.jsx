@@ -1,5 +1,6 @@
 import { facebook, instagram, linkedin, linktree } from "../assets";
 import { clinics } from "../constants";
+import styles from "../style";
 
 const ClinicDetails = ({
   title,
@@ -31,7 +32,7 @@ const ClinicDetails = ({
         <img
           src={img}
           alt="maps"
-          className="mt-2 w-[100%] h-[100%] rounded-[10px]"
+          className="mt-6 w-[100%] h-[100%] rounded-[10px]"
         />
       </a>
     </div>
@@ -40,7 +41,7 @@ const ClinicDetails = ({
 
 const Footer = () => {
   return (
-    <section className="grid grid-row-2 gap-8 py-8">
+    <section className={`grid grid-row-2 gap-8 ${styles.paddingY}`}>
       <div className="grid grid-cols-2 w-full">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />

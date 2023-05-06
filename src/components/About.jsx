@@ -4,7 +4,7 @@ import styles, { layout } from "../style";
 const About = () => (
   <section id="about" className={`${styles.paddingY}`}>
     <div className={styles.flexCenter}>
-      <h2 className={styles.heading2}>Meet Dr. Patel, ND!</h2>
+      <h2 className={styles.heading2}>Meet Dr. Patel, ND</h2>
     </div>
 
     <div className={layout.sectionReverse}>

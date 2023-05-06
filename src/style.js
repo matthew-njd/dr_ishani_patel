@@ -4,7 +4,9 @@ const styles = {
   button: "py-4 px-6 font-regular font-medium text-[18px] rounded-[5px]",
 
   heading2:
-    "font-regular font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px]",
+    "font-regular font-semibold underline xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px]",
+  heading4:
+    "font-regluar font-semibold text-white text-[28px] leading-[23px] xs:leading-[76.8px]",
   paragraph: "font-regular font-normal text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",

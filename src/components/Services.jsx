@@ -28,7 +28,7 @@ const Services = () => {
     <section id="services" className={`${styles.paddingY}`}>
       <div className="grid">
         <h2 className={`${styles.heading2} ${styles.flexCenter} mb-5`}>
-          Services I Provide
+          Services
         </h2>
         <p className={`${styles.paragraph} px-[100px] mb-[5%]`}>
           I value focussing on the basics; this starts off by looking at the

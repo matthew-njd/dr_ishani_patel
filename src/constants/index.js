@@ -33,6 +33,41 @@ export const navLinks = [
   },
 ];
 
+export const focuses = [
+  {
+    id: "focuses-1",
+    title: "Hormones",
+    content1: "Hyperthyroidism and hypothyroidism.",
+    content2: "Diabetes and Insulin Resistance.",
+    content3: "Polycystic Ovarian Syndrome.",
+    content4: "Adrenal fatigue.",
+  },
+  {
+    id: "focuses-2",
+    title: "Digestion",
+    content1: "Irritable Bowel Syndrome.",
+    content2: "Inflammatory Bowel Disease.",
+    content3: "Leaky Gut.",
+    content4: "GERD.",
+  },
+  {
+    id: "focuses-3",
+    title: "Fertility",
+    content1: "Polycystic Ovarian Syndrome.",
+    content2: "Endometriosis.",
+    content3: "Pelvic Inflammatory Disease.",
+    content4: "Diminished Ovarian Reserve.",
+  },
+  {
+    id: "focuses-4",
+    title: "Autoimmune",
+    content1: "Rheumatoid Arthritis.",
+    content2: "Lupus.",
+    content3: "Hashimoto’s Thyroiditis.",
+    content4: "Graves’ Disease.",
+  },
+];
+
 export const services = [
   {
     id: "services-1",
