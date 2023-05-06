@@ -16,12 +16,12 @@ const About = () => (
         />
       </div>
 
-      <div className={layout.sectionInfo}>
-        <p className={`${styles.paragraph} w-full mt-5`}>
+      <div className="flex flex-1">
+        <p className={`${styles.paragraph} w-full`}>
           Hi there, I’m Dr. Patel! Let’s work together and get you feeling like
           your best self.
-        </p>
-        <p className={`${styles.paragraph} w-full mt-5`}>
+          <br />
+          <br />
           My journey to naturopathic medicine started when I was in my 20’s. I
           was at a place in my life where I felt like I had exhausted all of my
           health options, and was looking for hope. Each day brought me new
@@ -31,8 +31,8 @@ const About = () => (
           foundations of my health (sleep, diet, stress, exercise). At this
           point, I realized that naturopathic medicine taught me how to live my
           life optimally.
-        </p>
-        <p className={`${styles.paragraph} w-full mt-5`}>
+          <br />
+          <br />
           My personal experience and passion is what drove me to become a
           Naturopathic Doctor. I have always believed that with commitment,
           education, and encouragement, the body can repair itself back to a

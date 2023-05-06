@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.paddingY}>
       <div className={styles.flexCenter}>
-        <h2 className={styles.heading2}>Get in Touch With Me</h2>
+        <h2 className={styles.heading2}>Get in Touch</h2>
       </div>
 
       <div className="grid grid-cols-2">
@@ -37,6 +37,9 @@ const Contact = () => {
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
             Have a question? Please fill out the form, and Dr. Patel, ND will
             get back to you within 1-2 business days.
+            <br />
+            <br />
+            Let’s work together and get you feeling like your best self.
           </p>
         </div>
 

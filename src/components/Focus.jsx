@@ -1,32 +1,39 @@
 import { focuses } from "../constants";
 import styles from "../style";
+import Button from "./Button";
 
-const FocusCard = ({ title, content1, content2, content3, content4 }) => (
+function goToContact() {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+const FocusCard = ({ title, img }) => (
   <div className="relative">
-    <div className="bg-tertiary mx-4 rounded-[10px] ">
+    <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
       <h4 className={`${styles.heading4} ${styles.flexCenter}`}>{title}</h4>
     </div>
-    <div
-      className={`relative top-[-10px] bg-secondary flex flex-row p-6 w-full h-[75%] rounded-[10px] box-shadow service-card`}
-    >
-      <ul className="font-regluar font-normal text-[16px] leading-[24px] list-disc ml-6">
-        <li>{content1}</li>
-        <li>{content2}</li>
-        <li>{content3}</li>
-        <li>{content4}</li>
-      </ul>
-    </div>
+    <img
+      src={img}
+      alt="freeicons.io"
+      className="relative top-[-10px] w-[100%] rounded-[10px] box-shadow-full service-card"
+    />
   </div>
 );
 
 const Services = () => {
   return (
     <section id="focuses" className={`${styles.paddingY}`}>
-      <div className="grid">
-        <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-row-2">
+        <div className="grid grid-cols-4 gap-4">
           {focuses.map((focus, index) => (
             <FocusCard key={focus.id} {...focus} index={index} />
           ))}
+        </div>
+        <div className={`${styles.flexCenter}`}>
+          <Button
+            styles={`mt-10 btn-card bg-secondary`}
+            onClick={goToContact}
+            text={"Get Started"}
+          />
         </div>
       </div>
     </section>

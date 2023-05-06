@@ -32,7 +32,7 @@ const ClinicDetails = ({
         <img
           src={img}
           alt="maps"
-          className="mt-6 w-[100%] h-[100%] rounded-[10px]"
+          className="mt-6 w-[100%] h-[100%] rounded-[10px] box-shadow-full"
         />
       </a>
     </div>
@@ -47,7 +47,8 @@ const Footer = () => {
           <ClinicDetails key={clinic.id} {...clinic} index={index} />
         ))}
       </div>
-      <div className={`flex justify-center items-center`}>
+
+      <div className="flex justify-center items-center mt-[50px]">
         <a
           href="https://www.facebook.com/ishani.patel.7161"
           target="_blank"

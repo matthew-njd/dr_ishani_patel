@@ -7,11 +7,16 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import wave from "../assets/wave.svg";
 
+import hormones from "../assets/hormones.png";
+import fertility from "../assets/fertility.png";
+import digestion from "../assets/digestion.png";
+import autoimmune from "../assets/autoimmune.png";
+
 import acu from "../assets/acu.svg";
 import diet from "../assets/diet.svg";
 import med from "../assets/med.svg";
 import phys from "../assets/phys.svg";
-import hydro from "../assets/hyrdo.svg";
+import hydro from "../assets/hydro.svg";
 import homeo from "../assets/homeo.svg";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
@@ -32,6 +37,10 @@ export {
   close,
   menu,
   wave,
+  hormones,
+  fertility,
+  digestion,
+  autoimmune,
   diet,
   acu,
   med,

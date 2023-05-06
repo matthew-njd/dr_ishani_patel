@@ -1,4 +1,8 @@
 import {
+  hormones,
+  digestion,
+  fertility,
+  autoimmune,
   diet,
   acu,
   med,
@@ -37,34 +41,22 @@ export const focuses = [
   {
     id: "focuses-1",
     title: "Hormones",
-    content1: "Hyperthyroidism and hypothyroidism.",
-    content2: "Diabetes and Insulin Resistance.",
-    content3: "Polycystic Ovarian Syndrome.",
-    content4: "Adrenal fatigue.",
+    img: hormones,
   },
   {
     id: "focuses-2",
     title: "Digestion",
-    content1: "Irritable Bowel Syndrome.",
-    content2: "Inflammatory Bowel Disease.",
-    content3: "Leaky Gut.",
-    content4: "GERD.",
+    img: digestion,
   },
   {
     id: "focuses-3",
     title: "Fertility",
-    content1: "Polycystic Ovarian Syndrome.",
-    content2: "Endometriosis.",
-    content3: "Pelvic Inflammatory Disease.",
-    content4: "Diminished Ovarian Reserve.",
+    img: fertility,
   },
   {
     id: "focuses-4",
     title: "Autoimmune",
-    content1: "Rheumatoid Arthritis.",
-    content2: "Lupus.",
-    content3: "Hashimoto’s Thyroiditis.",
-    content4: "Graves’ Disease.",
+    img: autoimmune,
   },
 ];
 
@@ -74,49 +66,49 @@ export const services = [
     icon: diet,
     title: "Diet and Lifestyle Counselling",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque dolor in.",
+      "The small things in our daily routine have a impact on our health. Mood, water consumption, nutrition, sleep routine, and physical movement all can have an impact on how we feel. Forming healthy habits helps us establish a foundation to sustain our health for a long time. Creating change in our lifestyle is not easy, but it is worth it.",
   },
   {
     id: "services-2",
     icon: acu,
     title: "TCM and Acupuncture",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet velit id.",
+      "Traditional Chinese Medicine utilizes acupuncture, cupping, and herbs to support the flow of energy (Qi) and remove obstacles interfering with this flow. It It has been used over the past 2500 years to help stimulate healing mechanisms and support organ meridians; useful for pain mangement, regulating hormones, improving energy, and insomnia.",
   },
   {
     id: "services-3",
     icon: med,
     title: "Botanical Medicine",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id justo et.",
+      " Several plants have therapeutic properties that have been used to treat a variety of health concerns. We can utilize these herbal extracts through tinctures, teas, powders, capsules. ",
   },
   {
     id: "services-4",
     icon: phys,
     title: "Body Work",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra leo eget.",
+      "Massage, cupping, chiropractic care are forms of hands-on treatment that reduce inflammation, stiffness, and pain, which help enhance the body’s ability to move.",
   },
   {
     id: "services-5",
     icon: hydro,
     title: "Hydrotherapy",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie viverra dolor.",
+      " Water can be used to revitalize and maintain health, which gives the body the poser to heal itself.",
   },
   {
     id: "services-6",
     icon: homeo,
     title: "Homeopathy",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec vestibulum orci.",
+      "Homeopathy focuses on the principle that like cures like, while utilizing minute diluted doses to stimulate the body’s vital force to heal the body. This safe approach has been used to provide relief for a variety of symptoms.",
   },
   {
     id: "services-7",
     icon: test,
     title: "Detailed Lab Testing",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna augue, volutpat.",
+      "Performing relevant testing can help determine the root cause of your concerns, as well as identify any deficiencies or hormonal imbalances. Testing can include bloodwork, hormone testing, salivary testing, urine tests, comprehensive stool tests, and food sensitivity testing.",
   },
   {
     id: "services-8",
