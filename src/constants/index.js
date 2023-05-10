@@ -123,6 +123,7 @@ export const clinics = [
   {
     id: "clinic-1",
     title: "Inspired Wellness",
+    book: "https://inspiredwellnessclinic.janeapp.com/#/staff_member/77",
     address: "822 Richmond St West, Suite 102",
     location: "Toronto, Ontario, M6J 1C9",
     phone: "416-214-9251",
@@ -135,6 +136,7 @@ export const clinics = [
   {
     id: "clinic-2",
     title: "Thrive Natural Family Health",
+    book: "https://thrivehealth.janeapp.com/#/staff_member/33",
     address: "110 Eglinton Avenue East, Suite 502",
     location: "Toronto, Ontario, M4P 2Y1",
     phone: "647-352-7911",

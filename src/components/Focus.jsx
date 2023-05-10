@@ -22,6 +22,11 @@ const FocusCard = ({ title, img }) => (
 const Services = () => {
   return (
     <section id="focuses" className={`${styles.paddingY}`}>
+      <div>
+        <h2 className={`${styles.heading2} ${styles.flexCenter}`}>
+          At a Glance
+        </h2>
+      </div>
       <div className="grid grid-row-2">
         <div className="grid grid-cols-4 gap-4">
           {focuses.map((focus, index) => (

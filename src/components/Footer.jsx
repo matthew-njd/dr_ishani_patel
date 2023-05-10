@@ -4,6 +4,7 @@ import styles from "../style";
 
 const ClinicDetails = ({
   title,
+  book,
   address,
   location,
   phone,
@@ -15,7 +16,9 @@ const ClinicDetails = ({
 }) => (
   <div className="bg-primary mx-[6rem] pt-2 rounded-[10px]">
     <div className="flex flex-col justify-center items-center">
-      <h4 className="font-regular font-normal text-[22px]">{title}</h4>
+      <a href={book}>
+        <h4 className="font-regular font-normal text-[22px]">{title}</h4>
+      </a>
       <p className="font-regular font-normal text-[16px]">{address}</p>
       <p className="font-regular font-normal text-[16px]">{location}</p>
       <a href={`tel:${phone}`}>
