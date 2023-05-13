@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, linktree } from "../assets";
+import { tab, facebook, instagram, linkedin, linktree } from "../assets";
 import { clinics } from "../constants";
 import styles from "../style";
 
@@ -14,10 +14,16 @@ const ClinicDetails = ({
   maps,
   img,
 }) => (
-  <div className="bg-primary mx-[6rem] pt-2 rounded-[10px]">
+  <div className="bg-primary mx-[8rem] pt-5 rounded-[10px]">
     <div className="flex flex-col justify-center items-center">
-      <a href={book}>
+      <a
+        className="flex flex-row"
+        title="Book here."
+        href={book}
+        target="_blank"
+      >
         <h4 className="font-regular font-normal text-[22px]">{title}</h4>
+        <img src={tab} alt="freeicon" className="ml-2" />
       </a>
       <p className="font-regular font-normal text-[16px]">{address}</p>
       <p className="font-regular font-normal text-[16px]">{location}</p>
@@ -35,7 +41,7 @@ const ClinicDetails = ({
         <img
           src={img}
           alt="maps"
-          className="mt-6 w-[100%] h-[100%] rounded-[10px] box-shadow-full"
+          className="mt-5 w-[100%] h-[100%] rounded-[10px] box-shadow-full"
         />
       </a>
     </div>

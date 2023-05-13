@@ -14,7 +14,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`relative font-regular font-normal cursor-pointer text-[22px] nav-text ${
+            className={`relative font-regular font-normal cursor-pointer text-[22px] underLine ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >

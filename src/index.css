@@ -55,6 +55,10 @@
   animation-fill-mode: forwards;
 }
 
+.underLine:hover {
+  text-decoration: underline;
+}
+
 .nav-text:hover {
   border-bottom: 3px solid #d1e0e0;
 }

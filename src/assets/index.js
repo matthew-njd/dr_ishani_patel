@@ -21,6 +21,7 @@ import homeo from "../assets/homeo.svg";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
 
+import tab from "../assets/tab.svg";
 import inspired from "../assets/inspired.png";
 import thrive from "../assets/thrive.png";
 
@@ -49,6 +50,7 @@ export {
   homeo,
   test,
   supp,
+  tab,
   inspired,
   thrive,
   facebook,
