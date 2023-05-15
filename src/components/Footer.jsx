@@ -14,7 +14,7 @@ const ClinicDetails = ({
   maps,
   img,
 }) => (
-  <div className="bg-primary mx-[8rem] pt-5 rounded-[10px]">
+  <div className="bg-primary mx-[6rem] pt-5 rounded-[10px]">
     <div className="flex flex-col justify-center items-center">
       <a
         className="flex flex-row"

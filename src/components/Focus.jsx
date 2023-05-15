@@ -1,23 +1,44 @@
+import { useState } from "react";
 import { focuses } from "../constants";
 import styles from "../style";
-import Button from "./Button";
+//import Button from "./Button";
 
-function goToContact() {
+/* function goToContact() {
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-}
+} */
 
-const FocusCard = ({ title, img }) => (
-  <div className="relative">
-    <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
-      <h4 className={`${styles.heading4} ${styles.flexCenter}`}>{title}</h4>
+const FocusCard = ({ title, img, details }) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleClick = () => {
+    setShowDetails(!showDetails);
+  };
+
+  return (
+    <div className="relative">
+      <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
+        <h4 className={`${styles.heading4} ${styles.flexCenter}`}>{title}</h4>
+      </div>
+      {!showDetails ? (
+        <>
+          <img
+            src={img}
+            alt="freeicons.io"
+            className="relative top-[-10px] w-[100%] rounded-[10px] box-shadow-full service-card"
+            onClick={handleClick}
+          />
+        </>
+      ) : (
+        <div
+          className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] box-shadow-full service-card"
+          onClick={handleClick}
+        >
+          <p className={`${styles.paragraph}`}>{details}</p>
+        </div>
+      )}
     </div>
-    <img
-      src={img}
-      alt="freeicons.io"
-      className="relative top-[-10px] w-[100%] rounded-[10px] box-shadow-full service-card"
-    />
-  </div>
-);
+  );
+};
 
 const Services = () => {
   return (
@@ -33,13 +54,13 @@ const Services = () => {
             <FocusCard key={focus.id} {...focus} index={index} />
           ))}
         </div>
-        <div className={`${styles.flexCenter}`}>
+        {/*         <div className={`${styles.flexCenter}`}>
           <Button
             styles={`mt-10 btn-card bg-secondary`}
             onClick={goToContact}
             text={"Get Started"}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -42,21 +42,29 @@ export const focuses = [
     id: "focuses-1",
     title: "Hormones",
     img: hormones,
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sodales mauris, a scelerisque nibh. Vivamus non justo ante.",
   },
   {
     id: "focuses-2",
     title: "Digestion",
     img: digestion,
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt eleifend dignissim. In euismod rhoncus sagittis. Maecenas interdum quam vitae.",
   },
   {
     id: "focuses-3",
     title: "Fertility",
     img: fertility,
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis velit ut orci lobortis, eget ultrices arcu volutpat. Morbi non.",
   },
   {
     id: "focuses-4",
     title: "Autoimmune",
     img: autoimmune,
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus orci ante, at condimentum ante consectetur id. Aenean lobortis varius.",
   },
 ];
 

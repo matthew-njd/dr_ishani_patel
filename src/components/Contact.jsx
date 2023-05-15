@@ -53,12 +53,14 @@ const Contact = () => {
                     className={`${styles.textInput}`}
                     placeholder="First Name"
                     name="firstName"
+                    required
                   />
                   <input
                     type="text"
                     className={`${styles.textInput}`}
                     placeholder="Last Name"
                     name="lastName"
+                    required
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-2 pt-2">
@@ -67,12 +69,14 @@ const Contact = () => {
                     className={`${styles.textInput}`}
                     placeholder="Email Address"
                     name="email"
+                    required
                   />
                   <input
                     type="phone"
                     className={`${styles.textInput}`}
                     placeholder="Phone Number"
                     name="phone"
+                    required
                   />
                 </div>
                 <div className="pt-2 mx-auto">
@@ -81,6 +85,7 @@ const Contact = () => {
                     className={`${styles.textInput}`}
                     placeholder="Subject"
                     name="subject"
+                    required
                   />
                 </div>
                 <div className="pt-2 mx-auto">
@@ -89,6 +94,7 @@ const Contact = () => {
                     id=""
                     placeholder="Your message"
                     name="message"
+                    required
                   ></textarea>
                 </div>
                 <div className="pt-3 mx-auto">
