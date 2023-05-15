@@ -24,13 +24,13 @@ const FocusCard = ({ title, img, details }) => {
           <img
             src={img}
             alt="freeicons.io"
-            className="relative top-[-10px] w-[100%] rounded-[10px] box-shadow-full service-card"
+            className="relative top-[-10px] w-[100%] rounded-[10px] cursor-pointer box-shadow-full service-card"
             onClick={handleClick}
           />
         </>
       ) : (
         <div
-          className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] box-shadow-full service-card"
+          className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] cursor-pointer box-shadow-full service-card"
           onClick={handleClick}
         >
           <p className={`${styles.paragraph}`}>{details}</p>

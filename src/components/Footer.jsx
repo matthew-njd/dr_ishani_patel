@@ -41,7 +41,7 @@ const ClinicDetails = ({
         <img
           src={img}
           alt="maps"
-          className="mt-5 w-[100%] h-[100%] rounded-[10px] box-shadow-full"
+          className="mt-5 w-[100%] h-[100%] rounded-[10px] box-shadow-full service-card"
         />
       </a>
     </div>
