@@ -3,7 +3,7 @@ import styles from "../style";
 import Button from "./Button";
 
 function goToServices() {
-  document.getElementById("focuses").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
 }
 
 const Hero = () => (

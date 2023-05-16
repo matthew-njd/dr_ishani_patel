@@ -50,9 +50,27 @@
   box-shadow: var(--card-shadow-dark);
 }
 
+.focus-card {
+  transition: 0.5s ease-out;
+}
+
+.focus-card:hover {
+  box-shadow: 0 4px 18px 0 var(--card-shadow-dark);
+}
+
+.service-card {
+  border: 2px solid #b5c8b5;
+  transition: 0.5s ease-out;
+}
+
 .service-card:hover {
-  animation: scale 0.5s ease-in-out;
-  animation-fill-mode: forwards;
+  border-color: #030343;
+  box-shadow: 0 4px 18px 0 var(--card-shadow-dark);
+}
+
+.service-card:hover .service-card__button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
 
 .underLine:hover {
