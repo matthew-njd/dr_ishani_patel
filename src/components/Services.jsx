@@ -1,27 +1,67 @@
+import React, { useState } from "react";
 import { services } from "../constants";
 import styles from "../style";
 
-const ServiceCard = ({ icon, title, content }) => (
-  <div
-    className={`bg-secondary flex flex-row p-6 w-full rounded-[10px] box-shadow service-card`}
-  >
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter}`}>
-      <img
-        src={icon}
-        alt="freeicons.io"
-        className="w-[100%] h-[100%] object-contain"
-      />
+const ServiceCard = ({ icon, title, content }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const [showContent, setShowContent] = useState(false);
+
+  const handleClick = () => {
+    setShowContent(!showContent);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      className={`bg-secondary flex items-center flex-start p-6 rounded-[10px] box-shadow service-card ${
+        isHovered ? "hovered" : ""
+      }`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {!showContent ? (
+        <>
+          <div className="w-[50%] h-[50%] rounded-full">
+            <img
+              src={icon}
+              alt="freeicons.io"
+              className="w-[100%] h-[100%] object-contain"
+            />
+          </div>
+          <div className="">
+            <h2 className="font-regluar font-semibold text-[24px] leading-[23px]">
+              {title}
+            </h2>
+          </div>
+          {isHovered && (
+            <button className="service-button" onClick={handleClick}>
+              Learn More
+            </button>
+          )}
+        </>
+      ) : (
+        <>
+          <p className="font-regluar font-normal text-gray-600 text-[16px] leading-[20px]">
+            {content}
+          </p>
+          {isHovered && (
+            <button className="service-button" onClick={handleClick}>
+              Learn More
+            </button>
+          )}
+        </>
+      )}
     </div>
-    <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-regluar font-semibold text-[18px] leading-[23px]">
-        {title}
-      </h4>
-      <p className="font-regluar font-normal text-gray-600 text-[16px] leading-[20px]">
-        {content}
-      </p>
-    </div>
-  </div>
-);
+  );
+};
 
 const Services = () => {
   return (
@@ -46,7 +86,7 @@ const Services = () => {
           wellbeing long-term.
         </p>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={service.id} {...service} index={index} />
           ))}

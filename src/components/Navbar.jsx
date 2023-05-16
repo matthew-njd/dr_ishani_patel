@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
-import Button from "./Button";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,11 +13,13 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`relative font-regular font-normal cursor-pointer text-[22px] underLine ${
+            className={`relative font-regular font-normal text-[20px] ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`#${nav.id}`} className="nav-style">
+              {nav.title}
+            </a>
           </li>
         ))}
       </ul>

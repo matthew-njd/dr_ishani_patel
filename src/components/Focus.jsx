@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { focuses } from "../constants";
 import styles from "../style";
-//import Button from "./Button";
-
-/* function goToContact() {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-} */
 
 const FocusCard = ({ title, img, details }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -54,13 +49,6 @@ const Services = () => {
             <FocusCard key={focus.id} {...focus} index={index} />
           ))}
         </div>
-        {/*         <div className={`${styles.flexCenter}`}>
-          <Button
-            styles={`mt-10 btn-card bg-secondary`}
-            onClick={goToContact}
-            text={"Get Started"}
-          />
-        </div> */}
       </div>
     </section>
   );

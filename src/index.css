@@ -46,6 +46,37 @@
   box-shadow: var(--card-shadow-light);
 }
 
+.nav-style {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.nav-style:focus:after,
+.nav-style:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.nav-style:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
 .btn-card {
   box-shadow: var(--card-shadow-dark);
 }
@@ -59,8 +90,22 @@
 }
 
 .service-card {
+  position: relative;
   border: 2px solid #b5c8b5;
   transition: 0.5s ease-out;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #030343;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: bottom 0.3s ease;
 }
 
 .service-card:hover {
@@ -68,9 +113,8 @@
   box-shadow: 0 4px 18px 0 var(--card-shadow-dark);
 }
 
-.service-card:hover .service-card__button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
+.service-card:hover .service-button {
+  bottom: 10px;
 }
 
 .underLine:hover {
