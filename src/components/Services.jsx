@@ -4,7 +4,6 @@ import styles from "../style";
 
 const ServiceCard = ({ icon, title, content }) => {
   const [isHovered, setIsHovered] = useState(false);
-
   const [showContent, setShowContent] = useState(false);
 
   const handleClick = () => {
@@ -21,7 +20,7 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex items-center flex-start p-6 rounded-[10px] box-shadow service-card ${
+      className={`bg-secondary flex items-center flex-start p-2 rounded-[10px] box-shadow service-card ${
         isHovered ? "hovered" : ""
       }`}
       onMouseEnter={handleMouseEnter}

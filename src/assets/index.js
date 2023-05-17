@@ -5,7 +5,6 @@ import contactPic from "../assets/contact-pic.jpg";
 import wood from "../assets/white-wood.png";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
-import wave from "../assets/wave.svg";
 
 import hormones from "../assets/hormones.png";
 import fertility from "../assets/fertility.png";
@@ -37,7 +36,6 @@ export {
   wood,
   close,
   menu,
-  wave,
   hormones,
   fertility,
   digestion,

@@ -15,7 +15,6 @@ module.exports = {
         cursive: ["Great Vibes", "cursive"],
       },
       backgroundImage: {
-        wave: "url('/src/assets/wave.svg')",
         wood: "url('/src/assets/white-wood.png')",
       },
     },

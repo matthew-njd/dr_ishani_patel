@@ -40,14 +40,6 @@ const Hero = () => (
         />
       </div>
     </div>
-
-    <div className={`ss:hidden ${styles.flexCenter}`}>
-      <Button
-        styles={`mt-10 btn-card bg-secondary`}
-        onClick={goToServices}
-        text="Learn More"
-      />
-    </div>
   </section>
 );
 
