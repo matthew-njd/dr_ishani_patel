@@ -92,7 +92,6 @@
 .service-card {
   position: relative;
   border: 2px solid #b5c8b5;
-  transition: 0.5s ease-out;
   transition: box-shadow 0.3s ease;
 }
 
@@ -100,7 +99,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: #030343;
   color: #fff;
   border: none;

@@ -16,7 +16,7 @@ import diet from "../assets/diet.svg";
 import med from "../assets/med.svg";
 import phys from "../assets/phys.svg";
 import hydro from "../assets/hydro.svg";
-import homeo from "../assets/homeo.svg";
+import homeo from "../assets/homeo.png";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
 

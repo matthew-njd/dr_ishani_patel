@@ -20,7 +20,7 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex items-center flex-start p-2 rounded-[10px] box-shadow service-card ${
+      className={`bg-secondary flex flex-row lg:flex-col items-center justify-center w-[500px] h-[250px] p-2 rounded-[10px] box-shadow service-card ${
         isHovered ? "hovered" : ""
       }`}
       onMouseEnter={handleMouseEnter}
@@ -28,18 +28,14 @@ const ServiceCard = ({ icon, title, content }) => {
     >
       {!showContent ? (
         <>
-          <div className="w-[50%] h-[50%] rounded-full">
-            <img
-              src={icon}
-              alt="freeicons.io"
-              className="w-[100%] h-[100%] object-contain"
-            />
-          </div>
-          <div className="">
-            <h2 className="font-regluar font-semibold text-[24px] leading-[23px]">
-              {title}
-            </h2>
-          </div>
+          <img
+            src={icon}
+            alt="freeicons.io"
+            className="w-[50%] h-[50%] object-contain"
+          />
+          <h2 className="font-regluar font-semibold mb-8 text-[24px] leading-[23px]">
+            {title}
+          </h2>
           {isHovered && (
             <button className="service-button" onClick={handleClick}>
               Learn More
@@ -48,7 +44,7 @@ const ServiceCard = ({ icon, title, content }) => {
         </>
       ) : (
         <>
-          <p className="font-regluar font-normal text-gray-600 text-[16px] leading-[20px]">
+          <p className="font-regluar text-center font-normal text-gray-600 mb-6 text-[18px] leading-[20px]">
             {content}
           </p>
           {isHovered && (
