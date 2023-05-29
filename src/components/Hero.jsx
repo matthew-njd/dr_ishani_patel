@@ -8,10 +8,8 @@ function goToServices() {
 
 const Hero = () => (
   <section id="home" className={`flex ${styles.paddingY}`}>
-    <div
-      className={`relative flex-1 ${styles.flexStart} items-center ss:flex-row xl:px-0 sm:px-16`}
-    >
-      <div className="relative z-[1] mr-[-50px] bg-primary font-regular p-10 md:mr ss:text-[22px] text-[18px] box-shadow-full rounded-lg">
+    <div className={`relative flex-1 ${styles.flexStart} items-center`}>
+      <div className="relative z-[1] mr-[-50px] bg-primary font-regular p-10 ss:text-[22px] text-[18px] box-shadow-full rounded-lg">
         Hormones | Digestion | Fertility | Autoimmune
         <br />
         <span className="ss:text-[32px] text-[22px]">
@@ -32,7 +30,7 @@ const Hero = () => (
         </div>
       </div>
 
-      <div className={`relative flex-1 md:my-0 my-10`}>
+      <div className="relative flex-1 md:my-0 my-10">
         <img
           src={homePic}
           alt="portrait"

@@ -19,13 +19,13 @@ const FocusCard = ({ title, img, details }) => {
           <img
             src={img}
             alt="freeicons.io"
-            className="relative lg:top-[-10px] w-[100%] rounded-[10px] cursor-pointer box-shadow-full focus-card"
+            className="relative top-[-10px] w-[100%] rounded-[10px] cursor-pointer box-shadow-full focus-card"
             onClick={handleClick}
           />
         </>
       ) : (
         <div
-          className="relative bg-secondary p-4 lg:top-[-10px] w-[100%] h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
+          className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
           onClick={handleClick}
         >
           <p className={`${styles.paragraph}`}>{details}</p>
@@ -43,7 +43,7 @@ const Services = () => {
           At a Glance
         </h2>
       </div>
-      <div className="grid lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {focuses.map((focus, index) => (
           <FocusCard key={focus.id} {...focus} index={index} />
         ))}
