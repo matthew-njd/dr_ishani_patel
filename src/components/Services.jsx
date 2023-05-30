@@ -63,7 +63,7 @@ const Services = () => {
     <section id="services" className={`${styles.paddingY}`}>
       <div className="grid">
         <h2 className={`${styles.heading2} ${styles.flexCenter}`}>Services</h2>
-        <p className={`${styles.paragraph} px-[100px] mb-[5%]`}>
+        <p className={`${styles.paragraph} lg:px-[100px] mb-[5%]`}>
           Our initial meeting will comprise of a detailed assessment. Together,
           we will review your health goals, analyze relevant blood work with
           additional testing, perform necessary physical examinations. We will
@@ -81,7 +81,7 @@ const Services = () => {
           wellbeing long-term.
         </p>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={service.id} {...service} index={index} />
           ))}

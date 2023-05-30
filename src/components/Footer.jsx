@@ -14,7 +14,7 @@ const ClinicDetails = ({
   maps,
   img,
 }) => (
-  <div className="bg-primary mx-[6rem] pt-5 rounded-[10px]">
+  <div className="bg-primary pt-5 rounded-[10px] w-[348px]">
     <div className="flex flex-col justify-center items-center">
       <a
         className="flex flex-row"
@@ -51,7 +51,7 @@ const ClinicDetails = ({
 const Footer = () => {
   return (
     <section className={`grid grid-row-2 gap-8 ${styles.paddingY}`}>
-      <div className="grid grid-cols-2 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-12">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />
         ))}

@@ -1,5 +1,5 @@
 const styles = {
-  boxWidth: "xl:max-w-[1080px] w-full",
+  boxWidth: "max-w-[1080px] w-full",
 
   button: "py-4 px-6 font-regular font-medium text-[18px] rounded-[5px]",
 

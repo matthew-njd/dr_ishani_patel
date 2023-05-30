@@ -10,7 +10,7 @@ const FocusCard = ({ title, img, details }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-[258px]">
       <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
         <h4 className={`${styles.heading4} ${styles.flexCenter}`}>{title}</h4>
       </div>
@@ -43,7 +43,7 @@ const Services = () => {
           At a Glance
         </h2>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 place-items-center max-w-[1080px] md:grid-cols-2 lg:grid-cols-4 gap-4">
         {focuses.map((focus, index) => (
           <FocusCard key={focus.id} {...focus} index={index} />
         ))}

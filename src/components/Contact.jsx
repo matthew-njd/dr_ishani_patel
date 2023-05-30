@@ -32,7 +32,7 @@ const Contact = () => {
         <h2 className={styles.heading2}>Get in Touch</h2>
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
         <div className={layout.sectionInfo}>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
             Have a question? Please fill out the form, and Dr. Patel, ND will
