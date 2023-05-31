@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { services } from "../constants";
+import { info } from "../assets";
 import styles from "../style";
 
 const ServiceCard = ({ icon, title, content }) => {
@@ -20,7 +21,7 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex flex-row lg:flex-col items-center justify-center w-[500px] h-[250px] p-2 rounded-[10px] box-shadow service-card ${
+      className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card ${
         isHovered ? "hovered" : ""
       }`}
       onMouseEnter={handleMouseEnter}
@@ -31,25 +32,31 @@ const ServiceCard = ({ icon, title, content }) => {
           <img
             src={icon}
             alt="freeicons.io"
-            className="w-[50%] h-[50%] object-contain"
+            className="w-[50%] h-[50%] object-contain mt-4"
           />
-          <h2 className="font-regluar font-semibold mb-8 text-[24px] leading-[23px]">
+          <h2 className="font-regluar font-semibold text-[24px] leading-[23px]">
             {title}
           </h2>
           {isHovered && (
-            <button className="service-button" onClick={handleClick}>
+            <button
+              className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
+              onClick={handleClick}
+            >
               Learn More
             </button>
           )}
         </>
       ) : (
         <>
-          <p className="font-regluar text-center font-normal text-gray-600 mb-6 text-[18px] leading-[20px]">
+          <p className="font-regluar text-center font-normal text-gray-600 mt-4 text-[18px] leading-[20px]">
             {content}
           </p>
           {isHovered && (
-            <button className="service-button" onClick={handleClick}>
-              Learn More
+            <button
+              className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
+              onClick={handleClick}
+            >
+              Back
             </button>
           )}
         </>

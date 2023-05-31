@@ -20,7 +20,9 @@ import homeo from "../assets/homeo.png";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
 
+import info from "../assets/info.svg";
 import tab from "../assets/tab.svg";
+
 import inspired from "../assets/inspired.png";
 import thrive from "../assets/thrive.png";
 
@@ -48,6 +50,7 @@ export {
   homeo,
   test,
   supp,
+  info,
   tab,
   inspired,
   thrive,
