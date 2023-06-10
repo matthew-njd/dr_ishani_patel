@@ -2,7 +2,7 @@ import { useState } from "react";
 import { focuses } from "../constants";
 import styles from "../style";
 
-const FocusCard = ({ title, img, details }) => {
+const FocusCard = ({ title, img, detail1, detail2, detail3, detail4 }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const handleClick = () => {
@@ -28,7 +28,12 @@ const FocusCard = ({ title, img, details }) => {
           className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
           onClick={handleClick}
         >
-          <p className={`${styles.paragraph}`}>{details}</p>
+          <ul className={`${styles.paragraph} space-y-3`}>
+            <li>{detail1}</li>
+            <li>{detail2}</li>
+            <li>{detail3}</li>
+            <li>{detail4}</li>
+          </ul>
         </div>
       )}
     </div>

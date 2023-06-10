@@ -42,29 +42,37 @@ export const focuses = [
     id: "focuses-1",
     title: "Hormones",
     img: hormones,
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sodales mauris, a scelerisque nibh. Vivamus non justo ante.",
+    detail1: "Hyperthyroidism and hypothyroidism.",
+    detail2: "Diabetes and Insulin Resistance.",
+    detail3: "Polycystic Ovarian Syndrome.",
+    detail4: "Adrenal Fatigue.",
   },
   {
     id: "focuses-2",
     title: "Digestion",
     img: digestion,
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt eleifend dignissim. In euismod rhoncus sagittis. Maecenas interdum quam vitae.",
+    detail1: "Irritable Bowel Syndrome.",
+    detail2: "Inflammatory Bowel Disease.",
+    detail3: "Leaky Gut.",
+    detail4: "GERD.",
   },
   {
     id: "focuses-3",
     title: "Fertility",
     img: fertility,
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis velit ut orci lobortis, eget ultrices arcu volutpat. Morbi non.",
+    detail1: "Polycystic Ovarian Syndrome.",
+    detail2: "Endometriosis.",
+    detail3: "Pelvic Inflammatory Disease.",
+    detail4: "Diminished Ovarian Reserve.",
   },
   {
     id: "focuses-4",
     title: "Autoimmune",
     img: autoimmune,
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus orci ante, at condimentum ante consectetur id. Aenean lobortis varius.",
+    detail1: "Rheumatoid Arthritis.",
+    detail2: "Lupus.",
+    detail3: "Hashimoto’s Thyroiditis.",
+    detail4: "Graves’ Disease.",
   },
 ];
 
@@ -123,7 +131,7 @@ export const services = [
     icon: supp,
     title: "Supplementation",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel viverra dolor.",
+      "Natural health supplements can provide a therapeutic effective dose to address a particular health concern or nutritional deficiency. They can come in the form of a capsule, tablet, liquid solution, or powder.",
   },
 ];
 
