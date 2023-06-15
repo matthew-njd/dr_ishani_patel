@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { services } from "../constants";
-import { info } from "../assets";
 import styles from "../style";
 
 const ServiceCard = ({ icon, title, content }) => {
@@ -21,7 +20,7 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card ${
+      className={`bg-secondary flex flex-row lg:flex-col items-center w-[385px] h-[350px] ss:w-[450px] ss:h-[250px] p-2 rounded-[10px] box-shadow service-card ${
         isHovered ? "hovered" : ""
       }`}
       onMouseEnter={handleMouseEnter}

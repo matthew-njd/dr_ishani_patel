@@ -12,7 +12,9 @@ const FocusCard = ({ title, img, detail1, detail2, detail3, detail4 }) => {
   return (
     <div className="relative w-[258px]">
       <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
-        <h4 className={`${styles.heading4} ${styles.flexCenter}`}>{title}</h4>
+        <h4 className={`${styles.heading4} ${styles.flexCenter} h-[75px]`}>
+          {title}
+        </h4>
       </div>
       {!showDetails ? (
         <>
