@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { services } from "../constants";
 import styles from "../style";
+import { arrow } from "../assets";
 
 const ServiceCard = ({ icon, title, content }) => {
   //const [isHovered, setIsHovered] = useState(false);
@@ -21,6 +22,7 @@ const ServiceCard = ({ icon, title, content }) => {
   return (
     <div
       className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card`}
+      onClick={handleClick}
       //onMouseEnter={handleMouseEnter}
       //onMouseLeave={handleMouseLeave}
     >
@@ -31,29 +33,24 @@ const ServiceCard = ({ icon, title, content }) => {
             alt="freeicons.io"
             className="w-[50%] h-[50%] object-contain mt-4"
           />
-          <h2 className="font-regluar font-semibold text-[24px] leading-[23px]">
+          <h2 className="font-regluar font-semibold text-[24px] mt-3 leading-[23px]">
             {title}
           </h2>
-          <button
-            className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
-            onClick={handleClick}
-          >
-            Learn More
-          </button>
+          <div className="absolute right-0 bottom-0 w-10 mr-3">
+            <img src={arrow} alt="freeicons.io" className="" />
+          </div>
+
           {/* {isHovered && (
           )} */}
         </>
       ) : (
         <>
-          <p className="font-regluar text-center font-normal text-gray-600 mt-4 text-[18px] leading-[20px]">
+          <p className="font-regluar font-normal text-gray-600 text-[18px] leading-[20px] p-3">
             {content}
           </p>
-          <button
-            className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
-            onClick={handleClick}
-          >
-            Back
-          </button>
+          <div className="absolute left-0 bottom-0 rotate-180 w-10 ml-3">
+            <img src={arrow} alt="freeicons.io" className="" />
+          </div>
         </>
       )}
     </div>

@@ -7,9 +7,16 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 
 import hormones from "../assets/hormones.png";
-import fertility from "../assets/fertility.png";
+import hBullet from "../assets/hmBullet.svg";
+
 import digestion from "../assets/digestion.png";
+import dBullet from "../assets/dgBullet.svg";
+
+import fertility from "../assets/fertility.png";
+import fBullet from "../assets/ftBullet.svg";
+
 import autoimmune from "../assets/autoimmune.png";
+import aBullet from "../assets/aiBullet.svg";
 
 import acu from "../assets/acu.svg";
 import diet from "../assets/diet.svg";
@@ -20,6 +27,7 @@ import homeo from "../assets/homeo.png";
 import test from "../assets/test.svg";
 import supp from "../assets/supp.svg";
 
+import arrow from "../assets/arrow.svg";
 import info from "../assets/info.svg";
 import tab from "../assets/tab.svg";
 
@@ -39,9 +47,13 @@ export {
   close,
   menu,
   hormones,
-  fertility,
+  hBullet,
   digestion,
+  dBullet,
+  fertility,
+  fBullet,
   autoimmune,
+  aBullet,
   diet,
   acu,
   med,
@@ -50,6 +62,7 @@ export {
   homeo,
   test,
   supp,
+  arrow,
   info,
   tab,
   inspired,

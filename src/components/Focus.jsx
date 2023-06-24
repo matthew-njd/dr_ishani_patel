@@ -2,7 +2,15 @@ import { useState } from "react";
 import { focuses } from "../constants";
 import styles from "../style";
 
-const FocusCard = ({ title, img, detail1, detail2, detail3, detail4 }) => {
+const FocusCard = ({
+  title,
+  img,
+  bullet,
+  detail1,
+  detail2,
+  detail3,
+  detail4,
+}) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const handleClick = () => {
@@ -31,10 +39,22 @@ const FocusCard = ({ title, img, detail1, detail2, detail3, detail4 }) => {
           onClick={handleClick}
         >
           <ul className={`${styles.paragraph} space-y-3`}>
-            <li>{detail1}</li>
-            <li>{detail2}</li>
-            <li>{detail3}</li>
-            <li>{detail4}</li>
+            <li className="flex">
+              <img src={bullet} alt="freeicons.io" className="w-7 mr-3" />
+              {detail1}
+            </li>
+            <li className="flex">
+              <img src={bullet} alt="freeicons.io" className="w-7 mr-3" />
+              {detail2}
+            </li>
+            <li className="flex">
+              <img src={bullet} alt="freeicons.io" className="w-7 mr-3" />
+              {detail3}
+            </li>
+            <li className="flex">
+              <img src={bullet} alt="freeicons.io" className="w-7 mr-3" />
+              {detail4}
+            </li>
           </ul>
         </div>
       )}
