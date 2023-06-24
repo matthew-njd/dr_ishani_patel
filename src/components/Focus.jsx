@@ -18,7 +18,7 @@ const FocusCard = ({
   };
 
   return (
-    <div className="relative w-[258px]">
+    <div className="relative w-[300px] md:w-[258px]">
       <div className="bg-tertiary mx-4 rounded-[10px] box-shadow">
         <h4 className={`${styles.heading4} ${styles.flexCenter} h-[75px]`}>
           {title}
@@ -29,13 +29,13 @@ const FocusCard = ({
           <img
             src={img}
             alt="freeicons.io"
-            className="relative top-[-10px] w-[100%] rounded-[10px] cursor-pointer box-shadow-full focus-card"
+            className="relative top-[-10px] h-[300px] md:h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
             onClick={handleClick}
           />
         </>
       ) : (
         <div
-          className="relative bg-secondary p-4 top-[-10px] w-[100%] h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
+          className="relative bg-secondary p-4 top-[-10px] h-[300px] md:h-[258px] rounded-[10px] cursor-pointer box-shadow-full focus-card"
           onClick={handleClick}
         >
           <ul className={`${styles.paragraph} space-y-3`}>

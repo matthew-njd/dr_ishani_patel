@@ -21,10 +21,8 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex flex-row lg:flex-col items-center w-[400px] md:w-[450px] h-[300px] md:h-[250px] p-2 rounded-[10px] box-shadow service-card`}
+      className={`bg-secondary flex flex-row lg:flex-col items-center w-[375px] md:w-[450px] h-[275px] md:h-[250px] p-2 rounded-[10px] box-shadow service-card`}
       onClick={handleClick}
-      //onMouseEnter={handleMouseEnter}
-      //onMouseLeave={handleMouseLeave}
     >
       {!showContent ? (
         <>
@@ -39,9 +37,6 @@ const ServiceCard = ({ icon, title, content }) => {
           <div className="absolute right-0 bottom-0 w-10 mr-3">
             <img src={arrow} alt="freeicons.io" className="" />
           </div>
-
-          {/* {isHovered && (
-          )} */}
         </>
       ) : (
         <>
