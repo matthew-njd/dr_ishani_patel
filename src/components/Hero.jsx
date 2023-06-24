@@ -16,7 +16,7 @@ const Hero = () => (
           Dr. Ishani Patel, Naturopathic Doctor <br />
           <br />
         </span>
-        <p className="italic ss:text-[16px] text-[10px]">
+        <p className="italic ss:text-[16px] text-[12px]">
           Empowering driven women to understand their hormones, and assisting
           them <br />
           to find their balance in living the life they always aspired for.

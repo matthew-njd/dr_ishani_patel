@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { services } from "../constants";
-import { info } from "../assets";
 import styles from "../style";
 
 const ServiceCard = ({ icon, title, content }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  //const [isHovered, setIsHovered] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
   const handleClick = () => {
@@ -21,11 +20,9 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card ${
-        isHovered ? "hovered" : ""
-      }`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card`}
+      //onMouseEnter={handleMouseEnter}
+      //onMouseLeave={handleMouseLeave}
     >
       {!showContent ? (
         <>
@@ -37,28 +34,26 @@ const ServiceCard = ({ icon, title, content }) => {
           <h2 className="font-regluar font-semibold text-[24px] leading-[23px]">
             {title}
           </h2>
-          {isHovered && (
-            <button
-              className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
-              onClick={handleClick}
-            >
-              Learn More
-            </button>
-          )}
+          <button
+            className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
+            onClick={handleClick}
+          >
+            Learn More
+          </button>
+          {/* {isHovered && (
+          )} */}
         </>
       ) : (
         <>
           <p className="font-regluar text-center font-normal text-gray-600 mt-4 text-[18px] leading-[20px]">
             {content}
           </p>
-          {isHovered && (
-            <button
-              className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
-              onClick={handleClick}
-            >
-              Back
-            </button>
-          )}
+          <button
+            className="absolute inset-x-0 bottom-0 m-1 p-2 bg-tertiary text-white rounded-[5px]"
+            onClick={handleClick}
+          >
+            Back
+          </button>
         </>
       )}
     </div>
