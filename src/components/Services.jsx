@@ -21,7 +21,7 @@ const ServiceCard = ({ icon, title, content }) => {
 
   return (
     <div
-      className={`bg-secondary flex flex-row lg:flex-col items-center w-[450px] h-[250px] p-2 rounded-[10px] box-shadow service-card`}
+      className={`bg-secondary flex flex-row lg:flex-col items-center w-[350px] md:w-[450px] h-[300px] md:h-[250px] p-2 rounded-[10px] box-shadow service-card`}
       onClick={handleClick}
       //onMouseEnter={handleMouseEnter}
       //onMouseLeave={handleMouseLeave}

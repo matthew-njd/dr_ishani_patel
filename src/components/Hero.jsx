@@ -8,7 +8,9 @@ function goToServices() {
 
 const Hero = () => (
   <section id="home" className={`flex ${styles.paddingY}`}>
-    <div className={`relative flex-1 ${styles.flexStart} items-center`}>
+    <div
+      className={`relative flex-col md:flex-row ${styles.flexCenter} mr-4 ml-4`}
+    >
       <div className="relative z-[1] bg-primary font-regular p-10 text-[22px] md:mr-[-50px] lg:text-[18px] box-shadow-full rounded-lg">
         Hormones | Digestion | Fertility | Autoimmune
         <br />
@@ -16,7 +18,7 @@ const Hero = () => (
           Dr. Ishani Patel, Naturopathic Doctor <br />
           <br />
         </span>
-        <p className="italic ss:text-[16px] text-[12px]">
+        <p className="italic ss:text-[16px] text-[14px]">
           Empowering driven women to understand their hormones, and assisting
           them <br />
           to find their balance in living the life they always aspired for.
@@ -30,7 +32,7 @@ const Hero = () => (
         </div>
       </div>
 
-      <div className="invisible ss:visible relative flex-1 max-w-[469px] md:my-0 my-10">
+      <div className="relative max-w-[469px] my-4">
         <img
           src={homePic}
           alt="portrait"
