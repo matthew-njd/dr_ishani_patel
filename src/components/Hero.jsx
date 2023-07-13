@@ -20,8 +20,7 @@ const Hero = () => (
         </span>
         <p className="italic ss:text-[16px] text-[14px]">
           Empowering driven women to understand their hormones, and assisting
-          them <br />
-          to find their balance in living the life they always aspired for.
+          them to find their balance in living the life they always aspired for.
         </p>
         <div className="ss:flex md:mr-4 mr-0">
           <Button
