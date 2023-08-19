@@ -2,8 +2,8 @@ import { homePic } from "../assets";
 import styles from "../style";
 import Button from "./Button";
 
-function goToServices() {
-  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+function goToBooking() {
+  document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
 }
 
 const Hero = () => (
@@ -24,9 +24,9 @@ const Hero = () => (
         </p>
         <div className="ss:flex md:mr-4 mr-0">
           <Button
-            styles={`mt-10 btn-card animate-bounce bg-secondary`}
-            onClick={goToServices}
-            text="Learn More"
+            styles="mt-10 btn-card animate-bounce bg-secondary"
+            onClick={goToBooking}
+            text="Book Now"
           />
         </div>
       </div>

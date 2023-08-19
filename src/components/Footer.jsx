@@ -1,4 +1,4 @@
-import { tab, facebook, instagram, linkedin, linktree } from "../assets";
+import { bookNow, facebook, instagram, linkedin, linktree } from "../assets";
 import { clinics } from "../constants";
 import styles from "../style";
 
@@ -17,13 +17,13 @@ const ClinicDetails = ({
   <div className="bg-primary pt-5 rounded-[10px] w-[348px]">
     <div className="flex flex-col justify-center items-center">
       <a
-        className="flex flex-row"
-        title="Book here."
+        className="flex flex-row hover:underline"
+        title={`Book with ${title}`}
         href={book}
         target="_blank"
       >
         <h4 className="font-regular font-normal text-[22px]">{title}</h4>
-        <img src={tab} alt="freeicon" className="ml-2" />
+        <img src={bookNow} alt="freeicon" className="w-6 ml-2" />
       </a>
       <p className="font-regular font-normal text-[16px]">{address}</p>
       <p className="font-regular font-normal text-[16px]">{location}</p>
@@ -34,8 +34,9 @@ const ClinicDetails = ({
       <p className="font-regular font-normal text-[16px]">{hours2}</p>
       <p className="font-regular font-normal text-[16px]">{hours3}</p>
       <a
-        href={maps}
         className="w-[250px] h-[250px] rounded-[10px]"
+        title={`Location of ${title}`}
+        href={maps}
         target="_blank"
       >
         <img
@@ -50,14 +51,18 @@ const ClinicDetails = ({
 
 const Footer = () => {
   return (
-    <section className={`grid grid-row-2 gap-8 ${styles.paddingY}`}>
+    <section id="footer" className={`grid grid-row-2 gap-8 ${styles.paddingY}`}>
+      <div className={styles.flexCenter}>
+        <h2 className={styles.heading2}>Book an Appointment</h2>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-12">
         {clinics.map((clinic, index) => (
           <ClinicDetails key={clinic.id} {...clinic} index={index} />
         ))}
       </div>
 
-      <div className="flex justify-center items-center mt-[50px]">
+      <div className="flex justify-center items-center mt-[100px]">
         <a
           href="https://www.facebook.com/ishani.patel.7161"
           target="_blank"

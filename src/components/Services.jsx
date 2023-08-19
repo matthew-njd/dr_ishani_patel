@@ -11,13 +11,13 @@ const ServiceCard = ({ icon, title, content }) => {
     setShowContent(!showContent);
   };
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  // };
 
   return (
     <div
@@ -40,7 +40,10 @@ const ServiceCard = ({ icon, title, content }) => {
         </>
       ) : (
         <>
-          <p className="font-regluar font-normal text-gray-600 text-[18px] leading-[20px] p-3">
+          <h4 className="font-regluar font-bold text-gray-600 underline text-[18px] leading-[20px] pt-3">
+            {title}
+          </h4>
+          <p className="font-regluar font-normal text-gray-600 text-[16px] leading-[20px] p-3">
             {content}
           </p>
           <div className="absolute left-0 bottom-0 rotate-180 w-10 ml-3">

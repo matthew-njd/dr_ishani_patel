@@ -29,7 +29,7 @@ import supp from "../assets/supp.svg";
 
 import arrow from "../assets/arrow.svg";
 import info from "../assets/info.svg";
-import tab from "../assets/tab.svg";
+import bookNow from "../assets/book.svg";
 
 import inspired from "../assets/inspired.png";
 import thrive from "../assets/thrive.png";
@@ -64,7 +64,7 @@ export {
   supp,
   arrow,
   info,
-  tab,
+  bookNow,
   inspired,
   thrive,
   facebook,

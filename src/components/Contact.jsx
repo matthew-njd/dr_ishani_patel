@@ -39,7 +39,7 @@ const Contact = () => {
             get back to you within 1-2 business days.
             <br />
             <br />
-            Let’s work together and get you feeling like your best self.
+            Let's work together and get you feeling like your best self.
           </p>
         </div>
 
