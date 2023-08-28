@@ -79,8 +79,8 @@ export const focuses = [
     bullet: aBullet,
     detail1: "Rheumatoid Arthritis",
     detail2: "Lupus",
-    detail3: "Hashimoto’s Thyroiditis",
-    detail4: "Graves’ Disease",
+    detail3: "Hashimoto's Thyroiditis",
+    detail4: "Graves' Disease",
   },
 ];
 
@@ -90,42 +90,42 @@ export const services = [
     icon: diet,
     title: "Diet and Lifestyle Counselling",
     content:
-      "The small things in our daily routine have a impact on our health. Mood, water consumption, nutrition, sleep routine, and physical movement all can have an impact on how we feel. Forming healthy habits helps us establish a foundation to sustain our health for a long time. Creating change in our lifestyle is not easy, but it is worth it.",
+      "The small things in our daily routine have an impact on our health. Mood, water consumption, nutrition, sleep routine, and physical movement all can have an impact on how we feel. Forming healthy habits helps us establish a foundation to sustain our health for a long time. Creating change in our lifestyle is not easy, but it is worth it.",
   },
   {
     id: "services-2",
     icon: acu,
     title: "TCM and Acupuncture",
     content:
-      "Traditional Chinese Medicine utilizes acupuncture, cupping, and herbs to support the flow of energy (Qi) and remove obstacles interfering with this flow. It It has been used over the past 2500 years to help stimulate healing mechanisms and support organ meridians; useful for pain mangement, regulating hormones, improving energy, and insomnia.",
+      "Traditional Chinese Medicine utilizes acupuncture, cupping, and herbs to support the flow of energy (Qi) and remove obstacles interfering with this flow. It has been used over the past 2500 years to help stimulate healing mechanisms and support organ meridians; useful for pain mangement, regulating hormones, improving energy, and insomnia.",
   },
   {
     id: "services-3",
     icon: med,
     title: "Botanical Medicine",
     content:
-      " Several plants have therapeutic properties that have been used to treat a variety of health concerns. We can utilize these herbal extracts through tinctures, teas, powders, capsules. ",
+      " Several plants have therapeutic properties that have been used to treat a variety of health concerns. We can utilize these herbal extracts through tinctures, teas, powders, and capsules. ",
   },
   {
     id: "services-4",
     icon: phys,
     title: "Body Work",
     content:
-      "Massage, cupping, chiropractic care are forms of hands-on treatment that reduce inflammation, stiffness, and pain, which help enhance the body’s ability to move.",
+      "Massage, cupping, and chiropractic adjustments are forms of hands-on treatment that reduce inflammation, stiffness, and pain; which help enhance the body's ability to move.",
   },
   {
     id: "services-5",
     icon: hydro,
     title: "Hydrotherapy",
     content:
-      " Water can be used to revitalize and maintain health, which gives the body the poser to heal itself.",
+      " Water can be used to revitalize and maintain health, which gives the body the power to heal itself.",
   },
   {
     id: "services-6",
     icon: homeo,
     title: "Homeopathy",
     content:
-      "Homeopathy focuses on the principle that like cures like, while utilizing minute diluted doses to stimulate the body’s vital force to heal the body. This safe approach has been used to provide relief for a variety of symptoms.",
+      "Homeopathy focuses on the principle that like cures like, while utilizing minute diluted doses to stimulate the body's vital force to heal the body. This safe approach has been used to provide relief for a variety of symptoms.",
   },
   {
     id: "services-7",
